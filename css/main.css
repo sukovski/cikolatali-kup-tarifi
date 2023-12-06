@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "DancingScript";
+    src: url(/fonts/DancingScript-Regular.ttf) format("truetype");
+}
+
 * {
     font-family: Poppins, sans-serif;
     margin: 0;
@@ -5,7 +10,7 @@
 }
 
 body{
-    background: #f0d1c0;
+    background: #fff1e0;
     margin: 0;
     padding: 25px;;
 }
@@ -14,9 +19,46 @@ nav{
     display: block;
 }
 
+a{
+    text-decoration: none;
+}
+
+/* header */
+nav ul{
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#54381d;
+    text-align: center;
+}
+
+nav li{
+    display: inline-block;
+    text-decoration: none;
+}
+nav a li{
+    color:#f0d1c0;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+
+/* logo */
+.header-logo {
+    display: block;
+    text-align: center;
+    margin: 10px;
+}
+.header-logo img{
+    max-width: 200px;
+}
+
 main{
     display: flex;
-    background-color:beige;
+    flex-wrap: wrap;
+    background-color:#ddcbb2;
     padding: 30px;
     border-radius: 25px;
 }
@@ -28,28 +70,54 @@ span{
     padding-bottom: 1rem !important;
 }
 article h3{
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     width: max-content;
     border-radius: 4px;
     background-color: #54381d;
-    color: #ffffff;
+    color:#f0d1c0;
     padding: 5px 15px 5px 15px;
 }
-
+article h3:hover{
+    color: #ffffff;
+}
 article li{
     line-height: 1.5rem;
     color: #635343;
 }
 
-
+section.recipe-information, .recipe-information ul{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.recipe-information li{
+    border: 2px solid #54381d;
+    border-radius: 5px;
+    background-color: #54381d;
+    color:#f0d1c0;
+    margin: 0px 10px 30px 0;
+    padding: 10px;
+    list-style-type: none;
+}
+.recipe-information span{
+    color: #ffffff;
+}
+span.handwrite{
+    font-family: DancingScript ;
+    color: #54381d;
+    font-size: 22pt;
+    font-weight: 500;
+    display: block;
+    padding: 50px 0px 50px 0px;
+    text-align: right;
+}
 .text {
     font-weight: 700;
     padding-bottom: 2rem;
 }
 
-
-
-.recipe-featured-img{
+.recipe-featured-img {
     width: 50%;
     padding-right: 2rem;
 }
